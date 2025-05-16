@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Your Trip - Travel Haven</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .booking-form {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .form-label {
+            font-weight: 500;
+        }
+        .booking-info {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <i class="bi bi-airplane-engines link-light fs-3"></i>
+            <a class="navbar-brand" href="index.html">Travel Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center">
+        <div class="container">
+            <h1>Book Your Dream Vacation</h1>
+            <p class="lead">Fill out the form below to start your journey with Travel Haven</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="booking-form">
+                    <h2 class="mb-4">Reservation Form</h2>
+                    <form id="bookingForm" novalidate>
+                        <div class="mb-4">
+                            <h4>Personal Information</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name*</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your first name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name*</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your last name.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address*</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                    <div class="invalid-feedback">
+                                        Please provide a valid email address.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number*</label>
+                                    <input type="tel" class="form-control" id="phone" required>
+                                    <div class="invalid-feedback">
+                                        Please provide your phone number.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4>Trip Details</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="destination" class="form-label">Destination*</label>
+                                    <select class="form-select" id="destination" required>
+                                        <option value="" selected disabled>Select a destination</option>
+                                        <option value="bali">Bali, Indonesia</option>
+                                        <option value="paris">Paris, France</option>
+                                        <option value="santorini">Santorini, Greece</option>
+                                        <option value="tokyo">Tokyo, Japan</option>
+                                        <option value="newyork">New York, USA</option>
+                                        <option value="safari">African Safari</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a destination.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="package" class="form-label">Package Type*</label>
+                                    <select class="form-select" id="package" required>
+                                        <option value="" selected disabled>Select a package</option>
+                                        <option value="standard">Standard</option>
+                                        <option value="premium">Premium</option>
+                                        <option value="luxury">Luxury</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select a package type.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="departureDate" class="form-label">Departure Date*</label>
+                                    <input type="date" class="form-control" id="departureDate" required>
+                                    <div class="invalid-feedback">
+                                        Please select a departure date.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="returnDate" class="form-label">Return Date*</label>
+                                    <input type="date" class="form-control" id="returnDate" required>
+                                    <div class="invalid-feedback">
+                                        Please select a return date.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="adults" class="form-label">Number of Adults*</label>
+                                    <select class="form-select" id="adults" required>
+                                        <option value="" selected disabled>Select</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5+</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Please select the number of adults.
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="children" class="form-label">Number of Children</label>
+                                    <select class="form-select" id="children">
+                                        <option value="0" selected>0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4+</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <h4>Additional Requests</h4>
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="specialRequests" class="form-label">Special Requests or Accommodations</label>
+                                    <textarea class="form-control" id="specialRequests" rows="3" placeholder="Let us know if you have any special requests or requirements"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="travelInsurance">
+                                        <label class="form-check-label" for="travelInsurance">
+                                            Add travel insurance to my booking (+₱5,508.50)
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label" for="newsletter">
+                                            Subscribe to our newsletter for travel tips and exclusive offers
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="termsConditions" required>
+                                        <label class="form-check-label" for="termsConditions">
+                                            I agree to the <a href="#">terms and conditions</a>*
+                                        </label>
+                                        <div class="invalid-feedback">
+                                            You must agree to the terms and conditions.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg">Submit Booking Request</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="booking-info">
+                    <h3>Booking Information</h3>
+                    <p>Complete the form to request your booking. Our team will contact you within 24 hours to confirm availability and process your payment.</p>
+                    
+                    <h4 class="mt-4">What's Included</h4>
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item bg-transparent px-0">Round-trip international flights</li>
+                        <li class="list-group-item bg-transparent px-0">Accommodation as per selected package</li>
+                        <li class="list-group-item bg-transparent px-0">Daily breakfast</li>
+                        <li class="list-group-item bg-transparent px-0">Airport transfers</li>
+                        <li class="list-group-item bg-transparent px-0">Selected activities and excursions</li>
+                    </ul>
+                    
+                    <h4>Need Help?</h4>
+                    <p>Our travel experts are here to assist you with your booking.</p>
+                    <p><strong>Call us:</strong> +1 (555) 123-4567</p>
+                    <p><strong>Email:</strong> bookings@travelhaven.com</p>
+                    
+                    <div class="alert alert-info mt-4">
+                        <strong>Booking Tip:</strong> For the best availability, we recommend booking at least 3 months in advance for peak season travel.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="bookingConfirmationModal" tabindex="-1" aria-labelledby="bookingConfirmationModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="bookingConfirmationModalLabel">Booking Request Received</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-check-circle-fill text-success" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Thank You for Your Booking Request!</h4>
+                    <p>We have received your booking request and our team will contact you within 24 hours to confirm availability and process your payment.</p>
+                    <p>A confirmation email has been sent to your email address with the details of your booking request.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Travel Haven</h5>
+                    <p>Your gateway to adventure since 2015.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@travelhaven.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm">Facebook</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Instagram</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Travel Haven. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Form Validation Script -->
+    <script>
+        // Form validation
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.getElementById('bookingForm');
+            
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                } else {
+                    event.preventDefault();
+                    // Show confirmation modal
+                    const confirmationModal = new bootstrap.Modal(document.getElementById('bookingConfirmationModal'));
+                    confirmationModal.show();
+                    // Reset form
+                    form.reset();
+                }
+                
+                form.classList.add('was-validated');
+            });
+            
+            // Date validation
+            const departureDate = document.getElementById('departureDate');
+            const returnDate = document.getElementById('returnDate');
+            
+            departureDate.addEventListener('change', function() {
+                // Set min date for return date
+                returnDate.min = departureDate.value;
+                
+                // If return date is before departure date, reset it
+                if (returnDate.value && returnDate.value < departureDate.value) {
+                    returnDate.value = '';
+                }
+            });
+            
+            // Set min date for departure to today
+            const today = new Date().toISOString().split('T')[0];
+            departureDate.min = today;
+        });
+    </script>
+</body>
+</html>

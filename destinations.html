@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destinations - Travel Haven</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .page-header {
+            background-color: #ffffff;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+        .destination-card {
+            margin-bottom: 2rem;
+            transition: transform 0.3s;
+        }
+        .destination-card:hover {
+            transform: translateY(-5px);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .badge-special {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <i class="bi bi-airplane-engines link-light fs-3"></i>
+            <a class="navbar-brand" href="index.html">Travel Haven</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="booking.html">Book Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center">
+        <div class="container">
+            <h1>Our Destinations</h1>
+            <p class="lead">Discover our carefully curated travel packages to the world's most amazing destinations</p>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row mb-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <span class="badge bg-danger badge-special">Hot Deal</span>
+                    <img src="image/Bali, Paradise.jpg" class="card-img-top" alt="Bali">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali Paradise</h5>
+                        <p class="card-text">Experience the magic of Bali with our all-inclusive package. Visit sacred temples, relax on pristine beaches, and immerse yourself in the local culture.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Duration:</strong> 7 Days / 6 Nights</li>
+                            <li class="list-group-item"><strong>Includes:</strong> Flights, 4-star accommodation, daily breakfast, 3 excursions</li>
+                            <li class="list-group-item"><strong>Price:</strong> <span class="text-primary fw-bold">₱72,278.13</span> per person</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-info">Beach</span>
+                            <span class="badge bg-info">Culture</span>
+                            <span class="badge bg-info">Adventure</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="booking.html" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="image/Paris Explorer.jpg" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris Explorer</h5>
+                        <p class="card-text">Fall in love with the city of lights. Visit iconic landmarks like the Eiffel Tower, Louvre Museum, and enjoy authentic French cuisine.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Duration:</strong> 5 Days / 4 Nights</li>
+                            <li class="list-group-item"><strong>Includes:</strong> Flights, boutique hotel, daily breakfast, Seine river cruise</li>
+                            <li class="list-group-item"><strong>Price:</strong> <span class="text-primary fw-bold">₱83,406.41</span> per person</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-info">City</span>
+                            <span class="badge bg-info">Culture</span>
+                            <span class="badge bg-info">Romance</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="booking.html" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <span class="badge bg-success badge-special">New</span>
+                    <img src="image/Santori, Gateway.jpg" class="card-img-top" alt="Santorini">
+                    <div class="card-body">
+                        <h5 class="card-title">Santorini Getaway</h5>
+                        <p class="card-text">Enjoy breathtaking views of the Aegean Sea from your cliffside accommodation. Explore white-washed villages and watch the famous sunset.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Duration:</strong> 6 Days / 5 Nights</li>
+                            <li class="list-group-item"><strong>Includes:</strong> Flights, sea-view hotel, daily breakfast, wine tasting tour</li>
+                            <li class="list-group-item"><strong>Price:</strong> <span class="text-primary fw-bold">$₱100,098.82</span> per person</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-info">Island</span>
+                            <span class="badge bg-info">Relaxation</span>
+                            <span class="badge bg-info">Romance</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="booking.html" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="image/Tokyo, Adventure.jpg" class="card-img-top" alt="Tokyo">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo Adventure</h5>
+                        <p class="card-text">Experience the perfect blend of tradition and modernity in Japan's capital. Visit ancient temples, explore bustling markets, and enjoy world-class cuisine.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Duration:</strong> 8 Days / 7 Nights</li>
+                            <li class="list-group-item"><strong>Includes:</strong> Flights, central hotel, daily breakfast, guided city tour</li>
+                            <li class="list-group-item"><strong>Price:</strong> <span class="text-primary fw-bold">₱122,355.36</span> per person</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-info">City</span>
+                            <span class="badge bg-info">Culture</span>
+                            <span class="badge bg-info">Food</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="booking.html" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <span class="badge bg-warning text-dark badge-special">Best Seller</span>
+                    <img src="image/NYC, Break.jpg" class="card-img-top" alt="New York">
+                    <div class="card-body">
+                        <h5 class="card-title">New York City Break</h5>
+                        <p class="card-text">Discover the city that never sleeps. Take in the iconic skyline, visit world-famous museums, and enjoy Broadway shows.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Duration:</strong> 5 Days / 4 Nights</li>
+                            <li class="list-group-item"><strong>Includes:</strong> Flights, Manhattan hotel, city pass, Broadway show ticket</li>
+                            <li class="list-group-item"><strong>Price:</strong> <span class="text-primary fw-bold">₱105,662.95</span> per person</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-info">City</span>
+                            <span class="badge bg-info">Entertainment</span>
+                            <span class="badge bg-info">Shopping</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="booking.html" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card destination-card h-100">
+                    <img src="image/African, Safari.jpg" class="card-img-top" alt="Safari">
+                    <div class="card-body">
+                        <h5 class="card-title">African Safari</h5>
+                        <p class="card-text">Embark on the adventure of a lifetime with our African safari package. Witness the Big Five in their natural habitat and experience stunning landscapes.</p>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><strong>Duration:</strong> 10 Days / 9 Nights</li>
+                            <li class="list-group-item"><strong>Includes:</strong> Flights, luxury lodges, all meals, guided safaris</li>
+                            <li class="list-group-item"><strong>Price:</strong> <span class="text-primary fw-bold">₱194,689.14</span> per person</li>
+                        </ul>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-info">Wildlife</span>
+                            <span class="badge bg-info">Adventure</span>
+                            <span class="badge bg-info">Nature</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <a href="booking.html" class="btn btn-primary w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Horizon Travels</h5>
+                    <p>Your gateway to adventure since 2015.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: info@travelhaven.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Follow Us</h5>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-light btn-sm">Facebook</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Instagram</a>
+                        <a href="#" class="btn btn-outline-light btn-sm">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Horizon Travels. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
